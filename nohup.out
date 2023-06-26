@@ -1,0 +1,417 @@
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 22, in <module>
+    from config import bot_token, default_mode, single_mode, user_ids
+  File "/home/u194242/Claude-Telegram-Bot/config/__init__.py", line 8, in <module>
+    user_ids = [int(user_id) for user_id in getenv("USER_IDS").split(",")]
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 22, in <module>
+    from config import bot_token, default_mode, single_mode, user_ids
+  File "/home/u194242/Claude-Telegram-Bot/config/__init__.py", line 8, in <module>
+    user_ids = [int(user_id) for user_id in getenv("USER_IDS").split(",")]
+AttributeError: 'NoneType' object has no attribute 'split'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 89, in recv_msg
+    input_text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 208, in recv_msg
+    await update.message.reply_media_group(images)
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1317, in reply_media_group
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2594, in send_media_group
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 2100, in send_media_group
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
+telegram.error.BadRequest: Replied message not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 216, in recv_msg
+    await update.message.reply_text(images, parse_mode=ParseMode.HTML)
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1074, in reply_text
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2633, in send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 807, in send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 507, in _send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 559, in _send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
+telegram.error.BadRequest: Replied message not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1074, in reply_text
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2633, in send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 807, in send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 507, in _send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 559, in _send_message
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
+telegram.error.BadRequest: Replied message not found
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 11, in <module>
+    from telegram.constants import ParseMode
+ImportError: cannot import name 'ParseMode' from 'telegram.constants' (/home/u194242/.local/lib/python3.9/site-packages/telegram/constants.py)
+python3: can't open file '/home/u194242/Claude-Telegram-Bot/bot.pypy': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 11, in <module>
+    from telegram.constants import ParseMode
+ImportError: cannot import name 'ParseMode' from 'telegram.constants' (/home/u194242/.local/lib/python3.9/site-packages/telegram/constants.py)
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 208, in recv_msg
+    await update.message.reply_media_group(images)
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1317, in reply_media_group
+    return await self.get_bot().send_media_group(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2594, in send_media_group
+    return await super().send_media_group(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 2100, in send_media_group
+    result = await self._post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+    return await self._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+    return await request.post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Replied message not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+    await coroutine
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 216, in recv_msg
+    await update.message.reply_text(images, parse_mode=ParseMode.HTML)
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1074, in reply_text
+    return await self.get_bot().send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2633, in send_message
+    return await super().send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 807, in send_message
+    return await self._send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 507, in _send_message
+    result = await super()._send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 559, in _send_message
+    result = await self._post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+    return await self._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+    return await request.post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Replied message not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1074, in reply_text
+    return await self.get_bot().send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2633, in send_message
+    return await super().send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 807, in send_message
+    return await self._send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 507, in _send_message
+    result = await super()._send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 559, in _send_message
+    result = await self._post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+    return await self._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+    return await request.post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Replied message not found
+Traceback (most recent call last):
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 22, in <module>
+    from config import bot_token, default_mode, single_mode, user_ids
+  File "/home/u194242/Claude-Telegram-Bot/config/__init__.py", line 8, in <module>
+    user_ids = [int(user_id) for user_id in getenv("USER_IDS").split(",")]
+AttributeError: 'NoneType' object has no attribute 'split'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/backends/asyncio.py", line 114, in connect_tcp
+    stream: anyio.abc.ByteStream = await anyio.connect_tcp(
+  File "/home/u194242/.local/lib/python3.9/site-packages/anyio/_core/_sockets.py", line 221, in connect_tcp
+    await event.wait()
+  File "/home/u194242/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 597, in __aexit__
+    raise exceptions[0]
+  File "/home/u194242/.local/lib/python3.9/site-packages/anyio/_core/_sockets.py", line 167, in try_connect
+    stream = await asynclib.connect_tcp(remote_host, remote_port, local_address)
+  File "/home/u194242/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 1627, in connect_tcp
+    await get_running_loop().create_connection(
+  File "/glob/development-tools/versions/oneapi/2023.1.2/oneapi/intelpython/latest/lib/python3.9/asyncio/base_events.py", line 1050, in create_connection
+    sock = await self._connect_sock(
+  File "/glob/development-tools/versions/oneapi/2023.1.2/oneapi/intelpython/latest/lib/python3.9/asyncio/base_events.py", line 961, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/glob/development-tools/versions/oneapi/2023.1.2/oneapi/intelpython/latest/lib/python3.9/asyncio/selector_events.py", line 500, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/backends/asyncio.py", line 121, in connect_tcp
+    stream._raw_socket.setsockopt(*option)  # type: ignore[attr-defined] # pragma: no cover
+  File "/home/u194242/.local/lib/python3.9/site-packages/anyio/_core/_tasks.py", line 119, in __exit__
+    raise TimeoutError
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_async/connection_pool.py", line 261, in handle_async_request
+    raise exc
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_async/connection_pool.py", line 245, in handle_async_request
+    response = await connection.handle_async_request(request)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_async/connection.py", line 92, in handle_async_request
+    raise exc
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_async/connection.py", line 69, in handle_async_request
+    stream = await self._connect(request)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_async/connection.py", line 117, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/backends/asyncio.py", line 121, in connect_tcp
+    stream._raw_socket.setsockopt(*option)  # type: ignore[attr-defined] # pragma: no cover
+  File "/glob/development-tools/versions/oneapi/2023.1.2/oneapi/intelpython/latest/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_httpxrequest.py", line 216, in do_request
+    res = await self._client.request(
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "/glob/development-tools/versions/oneapi/2023.1.2/oneapi/intelpython/latest/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/u194242/.local/lib/python3.9/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_message.py", line 1074, in reply_text
+    return await self.get_bot().send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 2633, in send_message
+    return await super().send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 807, in send_message
+    return await self._send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 507, in _send_message
+    result = await super()._send_message(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 559, in _send_message
+    result = await self._post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 469, in _post
+    return await self._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/_bot.py", line 497, in _do_post
+    return await request.post(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 291, in _request_wrapper
+    raise exc
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 277, in _request_wrapper
+    code, payload = await self.do_request(
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/request/_httpxrequest.py", line 233, in do_request
+    raise TimedOut from err
+telegram.error.TimedOut: Timed out
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'message'
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'message'
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'message'
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'message'
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'message'
+Error while getting Updates: Bad Gateway
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'message'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+    await coroutine
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 47, in view_other_drafts
+    last_msg_id = context.chat_data["Bard"].get("last_msg_id")
+KeyError: 'Bard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+    await coroutine
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 47, in view_other_drafts
+    last_msg_id = context.chat_data["Bard"].get("last_msg_id")
+KeyError: 'Bard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+    await coroutine
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 47, in view_other_drafts
+    last_msg_id = context.chat_data["Bard"].get("last_msg_id")
+KeyError: 'Bard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1124, in process_update
+    await coroutine
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 89, in recv_msg
+    input_text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u194242/.local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1671, in process_error
+    await callback(update, context)
+  File "/home/u194242/Claude-Telegram-Bot/bot.py", line 343, in error_handler
+    await update.message.reply_text(f"\u274c Error orrurred: {context.error}. /reset")
+AttributeError: 'NoneType' object has no attribute 'reply_text'

@@ -326,9 +326,6 @@ async def start_bot(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "• /id to get your chat identifier",
         "• /reset to reset the chat history",
         "• /retry to regenerate the answer",
-        "• /seg to send message in segments",
-        "• /mode to switch between Claude & Bard",
-        "• /settings to show Claude & Bard settings",
     ]
     print(f"[i] {update.effective_user.username} started the bot")
     await update.message.reply_text("\n".join(welcome_strs), parse_mode=ParseMode.HTML)
@@ -376,13 +373,13 @@ def run_bot():
         CommandHandler("id", send_id),
         CommandHandler("start", start_bot),
         CommandHandler("help", start_bot),
-        CommandHandler("reset", reset_chat, user_filter),
+        CommandHandler("reset", reset_chat),
         CommandHandler("settings", show_settings, user_filter),
-        CommandHandler("mode", change_mode, user_filter),
-        CommandHandler("model", change_model, user_filter),
-        CommandHandler("temp", change_temperature, user_filter),
-        CommandHandler("cutoff", change_cutoff, user_filter),
-        MessageHandler(user_filter & msg_filter, recv_msg),
+        CommandHandler("mode", change_mode),
+        CommandHandler("model", change_model),
+        CommandHandler("temp", change_temperature),
+        CommandHandler("cutoff", change_cutoff),
+        MessageHandler(msg_filter, recv_msg),
         CallbackQueryHandler(view_other_drafts),
     ]
     for handler in handler_list:
